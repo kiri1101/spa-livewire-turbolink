@@ -1,0 +1,32 @@
+<?php
+
+return [
+    //Home Page
+    'feature_header' => 'The Best Features', 
+    'delivery_header' => 'Delivery',
+    'delivery_content' => 'We guarantee 3 days of successful delivery throughout Italy via DHL, FedEx etc.',
+    'quality_header' => 'Our Quality',
+    'quality_content' => 'We provide a legitimate driving license online without wasting time, fully registered with the authorities of the EUROPEAN UNION',
+    'easy_header' => 'Easy',
+    'easy_content' => 'Its easy to get your driving license. Contact us so that we can discuss your needs and produce them for you. From the result of the theoretical test, result of the practical test etc.',
+    'our_service' => 'Our Service',
+    'service_first_paragraph' => 'Buy a driving license without written exams or practical tests. (Driving license center)',
+    'service_second_paragraph' => 'It is no longer a secret, there is no longer a country in Europe where you can get the license without stress, without problems, without worries. Today the procedure is so complex that some citizens are forced to change countries to find solutions, which they rarely find.',
+    'service_third_paragraph' => '5 tips to get your document safely',
+    'feature_1' => 'Best Service',
+    'f1_content' => 'We offer first rate service',
+    'feature_2' => 'Best Time Training',
+    'f2_content' => 'You can choose your team on weekdays after work or on weekends',
+    'feature_3' => 'We Train All Ages',
+    'f3_content' => 'we take into account the age of individual moments.',
+    'feature_4' => 'Individual Approach',
+    'f4_content' => 'to everyone we have our own approach.',
+    'feature_5' => 'Calm Instructor',
+    'f5_content' => 'practical training for you will be happy.',
+    'feature_6' => 'Duplicate Pedals',
+    'f6_content' => 'Cars equipped with duplicate pedals - avtoinstruktor always insures you.',
+    'feature_7' => 'All Documents',
+    'f7_content' => 'The full package of documents at the end - you get all the documents at the end of',
+    'feature_8' => 'Best Classroom',
+    'f8_content' => 'Equipped classrooms - all done according to the rules and laws',
+];

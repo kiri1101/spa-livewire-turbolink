@@ -1,0 +1,41 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.h1 {
+    @apply font-mono text-4xl font-bold;
+}
+.h2 {
+    @apply font-mono text-3xl font-bold;
+}
+.h3 {
+    @apply font-mono text-2xl font-bold;
+}
+.h4 {
+    @apply font-mono text-xl font-bold;
+}
+.h5 {
+    @apply font-mono text-lg font-bold;
+}
+
+.li-courses {
+    @apply border-l-2 border-yellow-200 px-2 my-2;
+}
+
+.pattern {
+    background-image: url("@/images/bg-about.jpg");
+}
+
+.bg-course {
+    background-image: url("@/images/bg-course.jpg");
+}
+
+.bg-faq {
+    background-image: url("@/images/bg-faq.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto;
+}
