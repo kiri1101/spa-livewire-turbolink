@@ -3,8 +3,10 @@
 namespace App\Http\Livewire;
 
 use App\Models\Review;
+use Illuminate\Http\Request;
 use Livewire\Component;
 use Livewire\WithFileUploads;
+use Stevebauman\Location\Facades\Location;
 
 class Reviews extends Component
 {
@@ -16,7 +18,6 @@ class Reviews extends Component
     public $comment;
     public $photo;
     public $success = false;
-    public $flash;
 
     public function render()
     {
@@ -39,9 +40,14 @@ class Reviews extends Component
         $this->validateOnly($propertyName);
     }
 
-    public function save()
+    public function save(Request $request)
     {
         $validatedData = $this->validate();
+        if(config('app.debug')) {
+            $locationData = Location::get('66.102.0.0');
+        } else {
+            $locationData = Location::get($request->ip());
+        }
 
         try {
             $validatedData['photo'] = $this->photo->store('photos','public');
@@ -50,10 +56,11 @@ class Reviews extends Component
             $review->email = $validatedData['email'];
             $review->comment = $validatedData['comment'];
             $review->rating = $validatedData['rating'];
-            $review->photo = $validatedData['photo'];     
+            $review->photo = $validatedData['photo'];
+            $review->location = $locationData->cityName .', '. $locationData->countryName;
+            $review->ip_address = $request->ip(); 
             $review->save();
 
-            $this->flash = 'Review created successfully!!!';
         } catch (\Throwable $th) {
             session()->flash('error', 'Something wnet wrong!!!');
         }

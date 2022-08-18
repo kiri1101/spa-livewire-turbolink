@@ -20,6 +20,8 @@ return new class extends Migration
             $table->text('comment');
             $table->string('photo');
             $table->integer('rating');
+            $table->string('location');
+            $table->string('ip_address');
             $table->timestamps();
         });
     }

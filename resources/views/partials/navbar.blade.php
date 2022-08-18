@@ -18,33 +18,33 @@
             <ul class="flex flex-row justify-center p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                 <li
                     @if(url()->current()==route('home'))
-                        class="block py-2 pl-3 pr-4 text-white bg-amber-500 rounded md:bg-transparent hover:shadow md:hover:shadow-none md:text-amber-500 md:p-0 dark:text-white" aria-current="page"
+                        class="block py-2 pl-3 pr-4 text-white bg-blue-500 rounded md:bg-transparent hover:shadow md:hover:shadow-none md:text-blue-500 md:p-0 dark:text-white" aria-current="page"
                     @else
-                        class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent hover:shadow md:hover:shadow-none md:hover:text-amber-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                        class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent hover:shadow md:hover:shadow-none md:hover:text-blue-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                     @endif>
                     <a href="{{ route('home') }}">Home</a>
                 </li>
                 <li 
                     @if (url()->current()==route('about'))
-                        class="block py-2 pl-3 pr-4 text-white bg-amber-500 rounded md:bg-transparent hover:shadow md:hover:shadow-none md:text-amber-500 md:p-0 dark:text-white" aria-current="page"
+                        class="block py-2 pl-3 pr-4 text-white bg-blue-500 rounded md:bg-transparent hover:shadow md:hover:shadow-none md:text-blue-500 md:p-0 dark:text-white" aria-current="page"
                     @else
-                        class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent hover:shadow md:hover:shadow-none md:hover:text-amber-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                        class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent hover:shadow md:hover:shadow-none md:hover:text-blue-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                     @endif>
                     <a href="{{ route('about') }}">About</a>
                 </li>
                 <li
                     @if (url()->current()==route('courses'))
-                        class="block py-2 pl-3 pr-4 text-white bg-amber-500 rounded md:bg-transparent hover:shadow md:hover:shadow-none md:text-amber-500 md:p-0 dark:text-white" aria-current="page"
+                        class="block py-2 pl-3 pr-4 text-white bg-blue-500 rounded md:bg-transparent hover:shadow md:hover:shadow-none md:text-blue-500 md:p-0 dark:text-white" aria-current="page"
                     @else
-                        class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent hover:shadow md:hover:shadow-none md:hover:text-amber-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                        class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent hover:shadow md:hover:shadow-none md:hover:text-blue-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                     @endif>
                     <a href="{{ route('courses') }}">Courses</a>
                 </li>
                 <li
                     @if (url()->current()==route('review'))
-                        class="block py-2 pl-3 pr-4 text-white bg-amber-500 rounded md:bg-transparent hover:shadow md:hover:shadow-none md:text-amber-500 md:p-0 dark:text-white" aria-current="page"
+                        class="block py-2 pl-3 pr-4 text-white bg-blue-500 rounded md:bg-transparent hover:shadow md:hover:shadow-none md:text-blue-500 md:p-0 dark:text-white" aria-current="page"
                     @else
-                        class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent hover:shadow md:hover:shadow-none md:hover:text-amber-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                        class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent hover:shadow md:hover:shadow-none md:hover:text-blue-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                     @endif>
                     <a href="{{ route('review') }}">Reviews</a>
                 </li>
