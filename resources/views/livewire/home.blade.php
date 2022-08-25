@@ -3,7 +3,7 @@
     
     @include('fragments.hero')
 
-    <hr class="w-full h-3 bg-yellow-300 border-2">
+    <hr class="w-full h-3 bg-sky-500 border-2">
 
     @include('fragments.features')
 

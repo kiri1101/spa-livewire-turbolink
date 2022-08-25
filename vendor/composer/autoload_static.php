@@ -550,18 +550,20 @@ class ComposerStaticInite1b146ea89fe393ef8b82f604f3e0173
     );
 
     public static $classMap = array (
+        'App\\CentralLogic\\Helper' => __DIR__ . '/../..' . '/app/CentralLogic/Helper.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\LanguageController' => __DIR__ . '/../..' . '/app/Http/Controllers/LanguageController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
-        'App\\Http\\Livewire\\About' => __DIR__ . '/../..' . '/app/Http/Livewire/About.php',
+        'App\\Http\\Livewire\\Categories' => __DIR__ . '/../..' . '/app/Http/Livewire/Categories.php',
         'App\\Http\\Livewire\\Courses' => __DIR__ . '/../..' . '/app/Http/Livewire/Courses.php',
         'App\\Http\\Livewire\\Home' => __DIR__ . '/../..' . '/app/Http/Livewire/Home.php',
         'App\\Http\\Livewire\\Reviews' => __DIR__ . '/../..' . '/app/Http/Livewire/Reviews.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
         'App\\Http\\Middleware\\Language' => __DIR__ . '/../..' . '/app/Http/Middleware/Language.php',
+        'App\\Http\\Middleware\\Location' => __DIR__ . '/../..' . '/app/Http/Middleware/Location.php',
         'App\\Http\\Middleware\\PreventRequestsDuringMaintenance' => __DIR__ . '/../..' . '/app/Http/Middleware/PreventRequestsDuringMaintenance.php',
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',

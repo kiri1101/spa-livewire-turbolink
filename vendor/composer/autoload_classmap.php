@@ -6,18 +6,20 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\CentralLogic\\Helper' => $baseDir . '/app/CentralLogic/Helper.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Http\\Controllers\\LanguageController' => $baseDir . '/app/Http/Controllers/LanguageController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
-    'App\\Http\\Livewire\\About' => $baseDir . '/app/Http/Livewire/About.php',
+    'App\\Http\\Livewire\\Categories' => $baseDir . '/app/Http/Livewire/Categories.php',
     'App\\Http\\Livewire\\Courses' => $baseDir . '/app/Http/Livewire/Courses.php',
     'App\\Http\\Livewire\\Home' => $baseDir . '/app/Http/Livewire/Home.php',
     'App\\Http\\Livewire\\Reviews' => $baseDir . '/app/Http/Livewire/Reviews.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
     'App\\Http\\Middleware\\EncryptCookies' => $baseDir . '/app/Http/Middleware/EncryptCookies.php',
     'App\\Http\\Middleware\\Language' => $baseDir . '/app/Http/Middleware/Language.php',
+    'App\\Http\\Middleware\\Location' => $baseDir . '/app/Http/Middleware/Location.php',
     'App\\Http\\Middleware\\PreventRequestsDuringMaintenance' => $baseDir . '/app/Http/Middleware/PreventRequestsDuringMaintenance.php',
     'App\\Http\\Middleware\\RedirectIfAuthenticated' => $baseDir . '/app/Http/Middleware/RedirectIfAuthenticated.php',
     'App\\Http\\Middleware\\TrimStrings' => $baseDir . '/app/Http/Middleware/TrimStrings.php',

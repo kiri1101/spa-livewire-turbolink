@@ -1,6 +1,6 @@
 <section id="features" class="bg-cream-white dark:bg-gray-900">
     <div class="container px-6 py-5 mx-auto">   
-        <h1 class="text-3xl font-semibold text-amber-500 capitalize lg:text-4xl dark:text-amber-300">{{ __('messages.feature_header') }}</h1>
+        <h1 class="text-3xl font-semibold text-sky-500 capitalize lg:text-4xl dark:text-sky-300">{{ __('messages.feature_header') }}</h1>
         
         <div class="grid grid-cols-1 gap-8 my-8 xl:my-12 xl:gap-16 md:grid-cols-3">
             <div class="flex flex-col items-center p-6 space-y-3 text-center shadow bg-gray-50 rounded-xl dark:bg-gray-800">
@@ -70,12 +70,12 @@
                 <div class="flex mt-8 lg:w-2/3 -skew-y-1 lg:-mt-[5rem] mb-[7rem] lg:mb-0">
                     <div class="lg:w-[720px] w-full h-[450px] bg-white shadow-md rounded dark:bg-gray-800">
                         <div class="max-w-xl p-4 mx-auto bg-white rounded-lg dark:bg-gray-800">
-                            <h3 class="mb-6 text-3xl tracking-tight text-yellow-400 font-semibold uppercase dark:text-yellow-200">{{ __('messages.our_service') }}</h3>
+                            <h3 class="mb-6 text-3xl tracking-tight text-sky-400 font-semibold uppercase dark:text-sky-200">{{ __('messages.our_service') }}</h3>
                             
                             <p class="mb-6 font-normal text-gray-700 dark:text-gray-400">{{ __('messages.service_first_paragraph') }}</p>
                             <p class="mb-6 font-normal text-gray-700 dark:text-gray-400">{{ __('messages.service_second_paragraph') }}</p>
                             <p class="mb-6 font-normal text-gray-700 dark:text-gray-400">{{ __('messages.service_third_paragraph') }}</p>
-                            <a href="{{ route('about') }}" class="inline-flex items-center px-5 py-3 text-sm font-medium text-center text-white bg-amber-500 rounded-md hover:bg-amber-600 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-amber-400 dark:hover:bg-amber-300 dark:focus:ring-blue-800">
+                            <a href="{{ route('categories') }}" class="inline-flex items-center px-5 py-3 text-sm font-medium text-center text-white bg-sky-500 rounded-md hover:bg-sky-600 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-sky-400 dark:hover:bg-sky-300 dark:focus:ring-blue-800">
                                 Read more
                                 <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                             </a>
@@ -84,7 +84,7 @@
                 </div>
 
                 <div class="bg-blue-900 opacity-90 lg:w-1/3">
-                    <h2 class="px-2 py-4 ml-2 text-3xl font-semibold text-left text-gray-100"><span class="font-bold">SAVE $59</span> <span class="font-light text-amber-300">ORDER<br> NOW!</span></h2>
+                    <h2 class="px-2 py-4 ml-2 text-3xl font-semibold text-left text-gray-100"><span class="font-bold">{{ __('messages.home_save') }}</span> <span class="font-light text-sky-300">{{ __('messages.home_order') }}<br> {{ __('messages.home_now') }}</span></h2>
                 </div>
             </div>
         </div>

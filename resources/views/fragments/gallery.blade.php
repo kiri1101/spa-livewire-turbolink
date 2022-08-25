@@ -1,6 +1,6 @@
 <section id="gallery" class="bg-white dark:bg-gray-900">
     <div class="container px-6 py-10 mx-auto">
-        <h1 class="text-2xl font-normal mb-2 text-gray-800 uppercase lg:text-4xl dark:text-white"><span class="font-bold">Photo</span> Gallery</h1>
+        <h1 class="text-2xl font-normal mb-2 text-gray-800 uppercase lg:text-4xl dark:text-white"><span class="font-bold">{{ __('messages.photo') }}</span> {{ __('messages.gallery') }}</h1>
         
         <div class="container mx-auto">
             <div class="grid-cols-3 p-10 space-y-2 bg-cream-white lg:space-y-0 lg:grid lg:gap-3 lg:grid-rows-3">

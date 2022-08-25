@@ -1,13 +1,14 @@
+<hr class="w-full h-1 bg-gray-500 border-2">
 <footer class="bg-cream-white dark:bg-gray-800">
     <div class="container px-6 py-4 mx-auto">
         <div class="lg:flex">
             <div class="w-full -mx-6 lg:w-2/5">
                 <div class="px-6">
                     <div>
-                        <a href="#" class="text-xl font-bold text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300">Brand</a>
+                        <a href="#" class="text-xl font-bold text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300">{{ Config::get('app.name') }}</a>
                     </div>
                     
-                    <p class="max-w-md mt-2 text-gray-500 dark:text-gray-400">Join 31,000+ other and never miss out on new tips, tutorials, and more.</p>
+                    <p class="max-w-md mt-2 text-gray-500 dark:text-gray-400">{{ __('messages.footer_brand_desc') }}</p>
                     
                     <div class="flex mt-4 -mx-2">
                         <a href="#" class="mx-2 text-gray-700 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400" aria-label="Linkden">
@@ -33,29 +34,24 @@
 
             <div class="mt-6 lg:mt-0 lg:flex-1">
                 <div class="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4">
+                    <div></div>
                     <div>
-                        <h3 class="text-gray-700 uppercase dark:text-white">About</h3>
-                        <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Company</a>
-                        <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">community</a>
-                        <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Careers</a>
+                        <h3 class="text-gray-700 uppercase dark:text-white font-semibold">{{ __('messages.footer_main_link') }}</h3>
+                        <a href="{{ route('categories') }}" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">{{ __('messages.footer_categories') }}</a>
+                        <a href="{{ route('courses') }}" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">{{ __('messages.footer_courses') }}</a>
+                        <a href="{{ route('review') }}" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">{{ __('messages.footer_reviews') }}</a>
                     </div>
 
                     <div>
-                        <h3 class="text-gray-700 uppercase dark:text-white">Blog</h3>
-                        <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Tec</a>
-                        <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Music</a>
-                        <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Videos</a>
+                        <h3 class="text-gray-700 uppercase dark:text-white font-semibold">{{ __('messages.footer_categories') }}</h3>
+                        <a href="{{ route('categories') }}/#catA" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">{{ __('messages.footer_catA') }}</a>
+                        <a href="{{ route('categories') }}/#catB" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">{{ __('messages.footer_catB') }}</a>
+                        <a href="{{ route('categories') }}/#catC" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">{{ __('messages.footer_catC') }}</a>
+                        <a href="{{ route('categories') }}/#catD" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">{{ __('messages.footer_catD') }}</a>
                     </div>
 
                     <div>
-                        <h3 class="text-gray-700 uppercase dark:text-white">Products</h3>
-                        <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Mega cloud</a>
-                        <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Aperion UI</a>
-                        <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Meraki UI</a>
-                    </div>
-
-                    <div>
-                        <h3 class="text-gray-700 uppercase dark:text-white">Contact</h3>
+                        <h3 class="text-gray-700 uppercase dark:text-white font-semibold">{{ __('messages.footer_contact') }}</h3>
                         <span class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">+1 526 654 8965</span>
                         <span class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">example@email.com</span>
                     </div>
@@ -66,7 +62,7 @@
         <hr class="h-px my-6 bg-gray-300 border-none dark:bg-gray-700">
 
         <div>
-            <p class="text-sm font-semibold text-center text-gray-800 lg:text-md dark:text-white">© Brand 2020 - All rights reserved</p>
+            <p class="text-sm font-semibold text-center text-gray-800 lg:text-md dark:text-white">© {{ Config::get('app.name') }} {{ now()->format('Y') }} - {{ __('messages.footer_right') }}</p>
         </div>
     </div>
 </footer>

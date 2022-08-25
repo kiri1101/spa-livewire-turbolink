@@ -3,9 +3,7 @@
 
     @include('partials.breadcrump')
 
-    @include('fragments.review')
-
-    @include('fragments.review-form')
+    @include('fragments.category')
 
     @include('partials.footer')
 </div>
