@@ -154,4 +154,17 @@ return [
     'review_start' => 'Reviewed in',
     'review_on' => 'on',
     
+    //Review Form
+    'form_name' => 'Your name',
+    'form_email' => 'Email address',
+    'form_file_upload' => 'Upload file',
+    'form_message' => 'Your message',
+    'form_review' => 'Rating',
+    'form_submit_button' => 'Submit Review',
+    'form_review_star1' => 'First star',
+    'form_review_star2' => 'Second star',
+    'form_review_star3' => 'Third star',
+    'form_review_star4' => 'Fourth star',
+    'form_review_star5' => 'Fifth star',
+
 ];

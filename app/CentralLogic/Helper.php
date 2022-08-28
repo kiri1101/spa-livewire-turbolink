@@ -25,4 +25,25 @@ class Helper
         }
         return false;
     }
+
+    public static function language_switch($lang)
+    {
+        try {
+            if (array_key_exists($lang, Config::get('languages'))) {
+                if ($lang=='en') {
+                    session(['applocale' => $lang, 'timezone' => config('languages.en.timezone')]);
+                } elseif ($lang=='fr') {
+                    session(['applocale' => $lang, 'timezone' => config('languages.fr.timezone')]);
+                } elseif ($lang=='it') {
+                    session(['applocale' => $lang, 'timezone' => config('languages.it.timezone')]);
+                } else {
+                    session()->put('applocale', config('app.fallback_locale'));
+                    session()->forget('timezone');
+                }
+            }
+        } catch (\Throwable $th) {
+            return back();
+        }
+
+    }
 }
