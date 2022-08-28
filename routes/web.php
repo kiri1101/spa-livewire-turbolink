@@ -5,10 +5,7 @@ use App\Http\Livewire\Categories;
 use App\Http\Livewire\Courses;
 use App\Http\Livewire\Home;
 use App\Http\Livewire\Reviews;
-use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Route;
-use App\CentralLogic\Helper;
-use Stevebauman\Location\Facades\Location as UserLocation;
 
 /*
 |--------------------------------------------------------------------------

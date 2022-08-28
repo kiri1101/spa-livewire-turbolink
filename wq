@@ -1,0 +1,35 @@
+[33mcommit b0ea5aea4868398ac1e3c504c9cde4fbc8a7e109[m[33m ([m[1;36mHEAD -> [m[1;32mfinishing[m[33m)[m
+Author: Kiri1101 <icejordan0@gmail.com>
+Date:   Thu Aug 25 04:30:05 2022 +0100
+
+    Work in progress 2
+
+[33mcommit ca51e50589ebe800f1812f53eacf500c305538df[m[33m ([m[1;31mmain/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Kiri1101 <icejordan0@gmail.com>
+Date:   Wed Aug 24 22:19:49 2022 +0100
+
+    Took off .env file
+
+[33mcommit d1002693bc9cdbac3a5d14e5adab67845fbe3623[m
+Author: Kiri1101 <icejordan0@gmail.com>
+Date:   Wed Aug 24 21:15:50 2022 +0100
+
+    First Build
+
+[33mcommit 747613f0b21bc4d42bb81839e3a15acc0f7b79b3[m
+Author: Kiri1101 <icejordan0@gmail.com>
+Date:   Wed Aug 24 20:15:11 2022 +0100
+
+    Cleared .gitattribut file
+
+[33mcommit 30eed43e5a0d165a6f0bad82ebf6cf9f82eade6a[m[33m ([m[1;31mproduction/master[m[33m)[m
+Author: Kiri1101 <icejordan0@gmail.com>
+Date:   Thu Aug 18 17:13:19 2022 +0100
+
+    Partial mofications
+
+[33mcommit 558f107a2d68f36f2a5421392c39238cdf5b8c02[m
+Author: Kiri1101 <icejordan0@gmail.com>
+Date:   Wed Aug 17 13:15:17 2022 +0100
+
+    SPA with livewire && Turbolink
